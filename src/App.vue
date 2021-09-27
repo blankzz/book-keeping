@@ -1,14 +1,16 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link>
-    |
-    <router-link to="/label">Label</router-link>
-    |
-    <router-link to="/statistics">Statistics</router-link>
-  </div>
+  <Nav v-show="showBottomNav" />
   <router-view />
 </template>
 
+<script lang="ts" setup>
+import Nav from '@/components/Nav.vue';
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+
+const store = useStore();
+const showBottomNav = computed(() => store.state.setting.showBottomNav);
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
