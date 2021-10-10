@@ -17,6 +17,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/statistics',
     component: () => import('@/views/Statistics.vue'),
   },
+  {
+    path: '/:catchAll(.*)',
+    component: () => import('@/views/NotFound.vue'),
+  },
 ];
 
 const router = createRouter({
