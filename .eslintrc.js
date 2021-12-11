@@ -10,9 +10,8 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    '@typescript-eslint/explicit-module-boundary-types': {
-      'allowExpressions': true
-    }
+    "@typescript-eslint/explicit-module-boundary-types": "warn",
+    '@typescript-eslint/consistent-type-imports': 'error'
   },
   overrides: [
     {
