@@ -3,12 +3,10 @@
     <div class="content">
       <slot />
     </div>
-    <Nav />
+    <m-nav />
   </div>
 </template>
-<script lang="ts" setup>
-import Nav from './Nav.vue';
-</script>
+<script lang="ts" setup></script>
 <style lang="scss" scoped>
 .nav-wrapper {
   border: 1px solid green;

@@ -1,10 +1,11 @@
 <template>
-  <Nav v-show="showBottomNav" />
-  <router-view />
+  <div id="app">
+    <m-nav v-show="showBottomNav" />
+    <router-view />
+  </div>
 </template>
 
 <script lang="ts" setup>
-import Nav from '@/components/Nav.vue';
 import { computed } from 'vue';
 import { useStore } from 'vuex';
 
