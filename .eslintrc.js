@@ -11,7 +11,8 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     "@typescript-eslint/explicit-module-boundary-types": "warn",
-    '@typescript-eslint/consistent-type-imports': 'error'
+    '@typescript-eslint/consistent-type-imports': 'error',
+    '@typescript-eslint/no-var-requires': 0,
   },
   overrides: [
     {
